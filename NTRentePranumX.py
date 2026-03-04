@@ -5,7 +5,7 @@ st.set_page_config(page_title="Kalkulator Rente Pranumerando", page_icon="💰")
 
 st.title("💰 Kalkulator Nilai Tunai Rente Pranumerando")
 st.write("Aplikasi simpel untuk menghitung nilai tunai dari modal yang dibayarkan di setiap awal periode.")
-st.expander("Dibuat oleh kelompok 3"):
+with st.expander("Dibuat oleh kelompok 3"):
             st.write("Adyanur Yahya XII.C/1")
             st.write("Anastasya Putri Ananta XII.C/5")
             st.write("Angga Saputra XII.C/6")

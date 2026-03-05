@@ -26,10 +26,11 @@ if st.button("Hitung Nilai Tunai"):
         st.success(f"### Hasil Perhitungan")
         st.metric(label="Total Nilai Tunai", value=f"Rp {nilai_tunai:,.2f}")
         
-        with st.expander("Lihat Rincian Parameter"):
-            st.write(f"- Modal per periode: **Rp {modal:,.2f}**")
-            st.write(f"- Suku bunga: **{bunga_persen}%**")
-            st.write(f"- Durasi: **{periode} periode**")
+        with st.expander("📝 Rincian Parameter & Rumus"):
+            st.latex(r"NT = a \cdot \left( \frac{1 - (1 + i)^{-n}}{i} \right) \cdot (1 + i)")
+            st.write(f"- Modal per periode ($a$): **Rp {modal:,.2f}**")
+            st.write(f"- Suku bunga ($i$): **{bunga_persen}%**")
+            st.write(f"- Durasi ($n$): **{periode} periode**")
     else:
         st.error("Suku bunga harus lebih besar dari 0.")
 

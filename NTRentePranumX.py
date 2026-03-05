@@ -5,13 +5,6 @@ st.set_page_config(page_title="Kalkulator Rente Pranumerando", page_icon="💰")
 
 st.title("💰 Kalkulator Nilai Tunai Rente Pranumerando")
 st.write("Aplikasi simpel untuk menghitung nilai tunai dari modal yang dibayarkan di setiap awal periode.")
-with st.expander("Dibuat oleh kelompok 3"):
-            st.write("Adyanur Yahya XII.C/1")
-            st.write("Anastasya Putri Ananta XII.C/5")
-            st.write("Angga Saputra XII.C/6")
-            st.write("Desvita Putri Vianasari XII.C/10")
-            st.write("M. Daffin Hermianto XII.C/21")
-            st.write("Shafira Citra Syahan XII.C/31")
 
 # Sidebar untuk input
 st.sidebar.header("Input Parameter")
@@ -40,3 +33,15 @@ if st.button("Hitung Nilai Tunai"):
         st.error("Suku bunga harus lebih besar dari 0.")
 
 st.info("Catatan: Pastikan satuan bunga dan periode sudah sinkron (misal: bunga per tahun dan durasi dalam tahun).")
+
+with st.expander("✨ Dibuat oleh Kelompok 3"):
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.caption("Adyanur Yahya (1)")
+        st.caption("Anastasya Putri (5)")
+    with col2:
+        st.caption("Angga Saputra (6)")
+        st.caption("Desvita Putri (10)")
+    with col3:
+        st.caption("M. Daffin H. (21)")
+        st.caption("Shafira Citra (31)")

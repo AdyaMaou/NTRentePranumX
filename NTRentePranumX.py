@@ -1,7 +1,8 @@
 import streamlit as st
 
 # Pengaturan Judul Aplikasi
-st.set_page_config(page_title="Kalkulator Rente Pranumerando", page_icon="💰")
+st.set_page_config(page_title="Kalkulator Rente Pranumerando", page_icon="💰", initial_sidebar_state="expanded")
+
 
 st.title("💰 Kalkulator Nilai Tunai Rente Pranumerando")
 st.write("Aplikasi simpel untuk menghitung nilai tunai dari modal yang dibayarkan di setiap awal periode.")

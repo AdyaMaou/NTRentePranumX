@@ -34,7 +34,8 @@ if st.button("Hitung Nilai Tunai"):
 
 st.info("Catatan: Pastikan satuan bunga dan periode sudah sinkron (misal: bunga per tahun dan durasi dalam tahun).")
 
-with st.expander("✨ Dibuat oleh Kelompok 3"):
+st.sidebar.markdown("---")
+with st.sidebar.expander("✨ Dibuat oleh Kelompok 3"):
     col1, col2, col3 = st.columns(3)
     with col1:
         st.caption("Adyanur Yahya (1)")
